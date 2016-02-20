@@ -11,5 +11,11 @@
     "rcb"
   ],
   "author": "CB and Rich",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "sequelize": "^3.19.3",
+    "sql": "^0.67.0"
+  }
 }
