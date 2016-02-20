@@ -8,7 +8,7 @@ app.enging('handlebars', expressHandlebars({
 }));
 
 var Sequelize = require('sequelize');
-var connection = new Sequelize('chocolate_db', 'root');
+var connection = new Sequelize('clubhouse_db', 'root');
 
 app.get('/', function(req, res){
   res.render('chocolate', {chocolates});
