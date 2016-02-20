@@ -11,10 +11,13 @@ var Sequelize = require('sequelize');
 var connection = new Sequelize('chocolate_db', 'root');
 
 app.get('/', function(req, res){
-  res.render('chocolate', {chocolates});
+  res.render('index', {msg req.query.msg});
 
 });
 
+
+
+//connecting server
 connection.sync().then(function(){
   app.listen(PORT, function(){
     console.log('Online on:' +PORT)
